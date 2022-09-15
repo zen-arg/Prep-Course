@@ -1,0 +1,287 @@
+[33mcommit 0a29d3e3ccf2e04d2c940262044a331e7834499f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Franco <francomfunes@hotmail.com>
+Date:   Mon Aug 22 17:13:33 2022 -0300
+
+    first commit
+
+[1mdiff --git a/02-JS-I/homework/homework.js b/02-JS-I/homework/homework.js[m
+[1mindex 3c92ac9..fe52ffb 100644[m
+[1m--- a/02-JS-I/homework/homework.js[m
+[1m+++ b/02-JS-I/homework/homework.js[m
+[36m@@ -1,22 +1,22 @@[m
+ // En estas primeras 6 preguntas, reemplaza `null` por la respuesta[m
+ [m
+ // Crea una variable "string", puede contener lo que quieras:[m
+[31m-const nuevaString = null;[m
+[32m+[m[32mconst nuevaString = "hola";[m
+ [m
+ // Crea una variable numérica, puede ser cualquier número:[m
+[31m-const nuevoNum = null;[m
+[32m+[m[32mconst nuevoNum = 2;[m
+ [m
+ // Crea una variable booleana:[m
+[31m-const nuevoBool = null;[m
+[32m+[m[32mconst nuevoBool = true;[m
+ [m
+ // Resuelve el siguiente problema matemático:[m
+[31m-const nuevaResta = 10 - null === 5;[m
+[32m+[m[32mconst nuevaResta = 10 - 5 === 5;[m
+ [m
+ // Resuelve el siguiente problema matemático:[m
+[31m-const nuevaMultiplicacion = 10 * null === 40 ;[m
+[32m+[m[32mconst nuevaMultiplicacion = 10 * 4 === 40 ;[m
+ [m
+ // Resuelve el siguiente problema matemático:[m
+[31m-const nuevoModulo = 21 % 5 === null;[m
+[32m+[m[32mconst nuevoModulo = 21 % 5 === 1;[m
+ [m
+ [m
+ // En los próximos 22 problemas, deberás completar la función.[m
+[36m@@ -28,117 +28,138 @@[m [mconst nuevoModulo = 21 % 5 === null;[m
+ function devolverString(str) {[m
+   // "Return" la string provista: str[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return str;[m
+ }[m
+ [m
+ function suma(x, y) {[m
+   // "x" e "y" son números[m
+   // Suma "x" e "y" juntos y devuelve el valor[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return x + y;[m
+ }[m
+ [m
+ function resta(x, y) {[m
+   // Resta "y" de "x" y devuelve el valor[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return x - y;[m
+ }[m
+ [m
+ function multiplica(x, y) {[m
+   // Multiplica "x" por "y" y devuelve el valor[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return x * y;[m
+ }[m
+ [m
+ function divide(x, y) {[m
+   // Divide "x" entre "y" y devuelve el valor[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return x / y;[m
+ }[m
+ [m
+ function sonIguales(x, y) {[m
+   // Devuelve "true" si "x" e "y" son iguales[m
+   // De lo contrario, devuelve "false"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  if (x === y) {[m
+[32m+[m[32m  return true;[m
+[32m+[m[32m} else {[m
+[32m+[m[32m  return false;[m
+[32m+[m[32m }[m[41m [m
+ }[m
+ [m
+ function tienenMismaLongitud(str1, str2) {[m
+   // Devuelve "true" si las dos strings tienen la misma longitud[m
+   // De lo contrario, devuelve "false"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return str1.length === str2.length;[m
+ }[m
+ [m
+ function menosQueNoventa(num) {[m
+   // Devuelve "true" si el argumento de la función "num" es menor que noventa[m
+   // De lo contrario, devuelve "false"[m
+   // Tu código:[m
+[31m-  [m
+[31m-}[m
+[32m+[m[32m  if (num < 90) {[m
+[32m+[m[32m  return true;[m
+[32m+[m[32m} else {[m
+[32m+[m[32m  return false;[m
+[32m+[m[32m }[m[41m   [m
+[32m+[m[32m}[m[41m [m
+ [m
+ function mayorQueCincuenta(num) {[m
+   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta[m
+   // De lo contrario, devuelve "false"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  if (50 < num ) {[m
+[32m+[m[32m    return true;[m
+[32m+[m[32m  } else {[m
+[32m+[m[32m    return false;[m
+[32m+[m[32m   }[m[41m   [m
+ }[m
+ [m
+ function obtenerResto(x, y) {[m
+   // Obten el resto de la división de "x" entre "y"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return x % y;[m
+ }[m
+ [m
+ function esPar(num) {[m
+   // Devuelve "true" si "num" es par[m
+   // De lo contrario, devuelve "false"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  if( num % 2 === 0) {[m
+[32m+[m[32m    return true;[m
+[32m+[m[32m  } else {[m
+[32m+[m[32m    return false;[m
+[32m+[m[32m  }[m
+[32m+[m[41m   [m
+ }[m
+ [m
+ function esImpar(num) {[m
+   // Devuelve "true" si "num" es impar[m
+   // De lo contrario, devuelve "false"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  if( num % 3 === 1) {[m
+[32m+[m[32m    return true;[m
+[32m+[m[32m  } else {[m
+[32m+[m[32m    return false;[m
+[32m+[m[32m  }[m
+ }[m
+ [m
+ function elevarAlCuadrado(num) {[m
+   // Devuelve el valor de "num" elevado al cuadrado[m
+   // ojo: No es raiz cuadrada![m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return Math.pow(num,2);[m
+ }[m
+ [m
+ function elevarAlCubo(num) {[m
+   // Devuelve el valor de "num" elevado al cubo[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return Math.pow(num,3);[m
+ }[m
+ [m
+ function elevar(num, exponent) {[m
+   // Devuelve el valor de "num" elevado al exponente dado en "exponent"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return Math.pow(num,exponent);[m
+ }[m
+ [m
+ function redondearNumero(num) {[m
+   // Redondea "num" al entero más próximo y devuélvelo[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return Math.round(num,1);[m
+ }[m
+ [m
+ function redondearHaciaArriba(num) {[m
+   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return Math.ceil(num,3);[m
+ }[m
+ [m
+ function numeroRandom() {[m
+   //Generar un número al azar entre 0 y 1 y devolverlo[m
+   //Pista: investigá qué hace el método Math.random()[m
+[31m-  [m
+[32m+[m[32m  return Math.random(1)[m
+ }[m
+ [m
+ function esPositivo(numero) {[m
+[36m@@ -146,32 +167,46 @@[m [mfunction esPositivo(numero) {[m
+   //Si el número es positivo, devolver ---> "Es positivo"[m
+   //Si el número es negativo, devolver ---> "Es negativo"[m
+   //Si el número es 0, devuelve false[m
+[31m-  [m
+[32m+[m[32m  if(numero === 0) {[m
+[32m+[m[32m    return false;}[m
+[32m+[m[32m  else if(numero > 0) {[m
+[32m+[m[32m    return "Es positivo";[m
+[32m+[m[32m  }[m
+[32m+[m[32m  else {[m
+[32m+[m[32m    return "Es negativo";[m
+[32m+[m[32m  }[m
+ }[m
+ [m
+ function agregarSimboloExclamacion(str) {[m
+   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string[m
+   // Ejemplo: "hello world" pasaría a ser "hello world!"[m
+   // Tu código:[m
+[32m+[m[32m  return str + "!";[m
+[32m+[m[41m  [m
+[32m+[m[41m  [m
+ }[m
+ [m
+ function combinarNombres(nombre, apellido) {[m
+   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.[m
+   // Ejemplo: "Soy", "Henry" -> "Soy Henry"[m
+   // Tu código:[m
+[32m+[m[32m  var combinado = nombre + " " + apellido[m
+[32m+[m[32m  return combinado;[m[41m [m
+   [m
+[32m+[m[41m   [m
+ }[m
+ [m
+ function obtenerSaludo(nombre) {[m
+   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:[m
+   // "Martin" -> "Hola Martin!"[m
+   // Tu código:[m
+[31m-  [m
+[32m+[m[32m  return "Hola " + nombre + "!";[m
+ }[m
+ [m
+ function obtenerAreaRectangulo(alto, ancho) {[m
+   // Retornar el area de un rectángulo teniendo su altura y ancho[m
+   // Tu código:[m
+[32m+[m[32m  return alto * ancho;[m
+   [m
+ }[m
+ [m
+[36m@@ -179,14 +214,14 @@[m [mfunction obtenerAreaRectangulo(alto, ancho) {[m
+ function retornarPerimetro(lado){[m
+   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.[m
+   //Escribe tu código aquí[m
+[31m-  [m
+[32m+[m[32m  return lado * 4[m
+ }[m
+ [m
+ [m
+ function areaDelTriangulo(base, altura){[m
+   //Desarrolle una función que calcule el área de un triángulo.[m
+   //Escribe tu código aquí[m
+[31m-[m
+[32m+[m[32mreturn base * altura / 2[m
+ }[m
+ [m
+ [m
+[36m@@ -194,7 +229,7 @@[m [mfunction deEuroAdolar(euro){[m
+   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba[m
+   //como parámetro un número de euros y calcule el cambio en dólares.[m
+   //Escribe tu código aquí[m
+[31m-  [m
+[32m+[m[32m  return euro * 1.20[m
+ }[m
+ [m
+ [m
+[36m@@ -204,7 +239,13 @@[m [mfunction esVocal(letra){[m
+   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".[m
+   // Si no es vocal, tambien debe devolver "Dato incorrecto".[m
+   //Escribe tu código aquí[m
+[31m-  [m
+[32m+[m[32m  if(letra.length > 1){[m
+[32m+[m[32m    return "Dato incorrecto"[m
+[32m+[m[32m  }[m
+[32m+[m[32m  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){[m
+[32m+[m[32m    return "Es vocal"[m
+[32m+[m[32m  }[m
+[32m+[m[32m  return "Dato incorrecto"[m
+ }[m
+ [m
+ [m
